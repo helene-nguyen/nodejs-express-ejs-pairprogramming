@@ -20,7 +20,8 @@ router.get('/game/:nameOfGame', (req, res) => {
         if (nameGame === gameTab.name) {
             res.render(`${nameGame}`, {
                 title: `${gameTab.title}`,
-                jsFile: `${gameTab.jsFile}`
+                jsFile: `${gameTab.jsFile}`,
+                cssFile: `${gameTab.cssFile}`
             });
             console.log(gameTab);
         };
