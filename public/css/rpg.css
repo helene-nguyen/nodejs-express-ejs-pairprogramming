@@ -1,0 +1,62 @@
+body {
+  background: #ddd;
+}
+
+body, html {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.player {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 0 15px 35px;
+  border-color: transparent transparent transparent blue;
+
+  margin: 20px;
+}
+
+.down {
+  transform: rotate(90deg);
+}
+
+.up {
+  transform: rotate(-90deg);
+}
+
+.left {
+  transform: rotate(180deg);
+}
+
+.right {
+  transform: rotate(0deg);
+}
+
+
+#board {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.cell {
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.target-cell {
+  border-color: red;
+  border-width: 3px;
+}
